@@ -11,7 +11,6 @@
 
 require 'open-uri'
 require 'json'
-require 'byebug'
 
 url = open("http://www.thecocktaildb.com/api/json/v1/1/list.php?i=list").read
 json = ActiveSupport::JSON.decode(url)
