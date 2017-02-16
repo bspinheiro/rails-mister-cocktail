@@ -1,0 +1,13 @@
+<h1><%= @cocktail.name.capitalize %></h1>
+<p>Ingredients</p>
+
+<div class="list-group">
+  <% @cocktail.doses.each do |d|%>
+    <button type="button" class="list-group-item">
+      <%= d.description.capitalize%> - <%= d.ingredient.name.capitalize%>
+    </button>
+  <% end %>
+</div>
+
+  <%= link_to "Add dose", new_cocktail_dose_path(@cocktail), {class: 'btn btn-primary btn-sm'}%>
+  <%= link_to "Delete dose", select_dose_path(@cocktail), {class: 'btn btn-primary btn-sm'} %>

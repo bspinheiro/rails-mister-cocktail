@@ -1,0 +1,11 @@
+<h1>Cocktails</h1>
+<p>Endulge yourself with one of our cocktails</p>
+<br>
+
+<div class="list-group">
+  <% @cocktails.each do |cocktail|%>
+    <button type="button" class="list-group-item">
+    <%= link_to cocktail.name.capitalize, cocktail_path(cocktail) %>
+    </button>
+  <% end %>
+</div>

@@ -1,0 +1,8 @@
+<h1>Too much drinking?</h1>
+<p>Just choose some dose to get rid with...</p>
+
+<%= simple_form_for @dose, :method => :delete do |f| %>
+  <%= f.input :id, as: :select, collection: @doses, prompt: 'Select Ingredient', label: false %>
+  <%= f.submit "Delete dose!", class: "btn btn-primary"%>
+<% end %>
+
