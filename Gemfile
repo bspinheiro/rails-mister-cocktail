@@ -53,13 +53,14 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'rspec-rails', group: [ :test ]
 
-#Extra Gems UX
+#Extra Gems UX + Model + Images
 gem 'bootstrap-sass'
 gem 'font-awesome-sass'
 gem 'simple_form'
 gem 'autoprefixer-rails'
 gem 'figaro'
 gem 'cloudinary', '1.1.0'
+gem 'carrierwave'
 
 #Extra gems Debug
 group :development do
