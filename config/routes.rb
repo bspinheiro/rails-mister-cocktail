@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 
   resources :doses, only: [:destroy]
 
-  get "doses/:id", to: "doses#select_dose", as: "select_dose"
+   # get "doses/:id", to: "doses#select_dose", as: "select_dose"
 
   root to: "cocktails#index"
 end
